@@ -150,7 +150,7 @@ These findings reflect the behavior of *our specific simplified implementation* 
 - **Not a reproduction:** the numbers here should not be compared against, or used to validate/invalidate, the KDD 2024 paper's reported results.
 
 
-## 18. Project Structure
+## 15. Project Structure
 
 ```
 bivariate-decision-trees-kdd2024/
@@ -191,7 +191,7 @@ bivariate-decision-trees-kdd2024/
 └── main.py
 ```
 
-## 19. Difference Between the Original Paper and Our Implementation
+## 16. Difference Between the Original Paper and Our Implementation
 
 | Aspect | Original Paper (KDD 2024) | Our Student Implementation |
 |---|---|---|
@@ -207,7 +207,7 @@ bivariate-decision-trees-kdd2024/
 
 **This project reproduces the conceptual core of the bivariate decision tree idea. It does not reproduce, and should not be interpreted as reproducing, the KDD 2024 paper's full algorithms, datasets, or experimental results.**
 
-## 20. Citation
+## 17. Citation
 
 If you refer to the original work, please cite:
 
