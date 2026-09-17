@@ -149,45 +149,6 @@ These findings reflect the behavior of *our specific simplified implementation* 
 - **Local, heuristic univariate fallback:** the bivariate-vs-univariate choice at each node is a simple local Gini-gain comparison, not a globally optimized decision.
 - **Not a reproduction:** the numbers here should not be compared against, or used to validate/invalidate, the KDD 2024 paper's reported results.
 
-## 15. Future Work
-
-- Implement the full bivariate TAO algorithm (alternating optimization over all tree nodes).
-- Implement the paper's λ/C regularization and regularization path.
-- Evaluate on larger, higher-dimensional datasets used in the original paper.
-- Compare more extensively against conventional and oblique/multivariate trees.
-- Add statistical significance testing (paired tests across folds, repeated CV with multiple seeds).
-
-## 16. How to Install
-
-```bash
-git clone https://github.com/<your-username>/bivariate-decision-trees-kdd2024.git
-cd bivariate-decision-trees-kdd2024
-
-python -m venv .venv
-source .venv/bin/activate      # Windows: .venv\Scripts\activate
-
-pip install -r requirements.txt
-```
-
-**Dependencies:** `numpy`, `pandas`, `matplotlib`, `scikit-learn`.
-
-## 17. How to Run
-
-Run the single train/test experiment (trains both models, saves results and plots, prints a summary):
-
-```bash
-python main.py
-```
-
-Run the 5-fold stratified cross-validation robustness check:
-
-```bash
-python -m src.cross_validation
-```
-
-All experiments use `random_state=42` and are reproducible from a clean environment.
-
-> **Note:** `main.py` regenerates `results/comparison_table.csv`, `results/full_results.json`, and the plot files. All metrics reproduce exactly; only the live-measured `training_time_seconds` field varies between runs, since it depends on machine speed.
 
 ## 18. Project Structure
 
