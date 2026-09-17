@@ -1,0 +1,85 @@
+{
+  "baseline_summary": {
+    "model_name": "Baseline Univariate Decision Tree (sklearn)",
+    "train_accuracy": 1.0,
+    "test_accuracy": 0.9333333333333333,
+    "precision": 0.9444444444444445,
+    "recall": 0.9333333333333332,
+    "f1": 0.9326599326599326,
+    "training_time_seconds": 0.0025739669799804688,
+    "depth": 5,
+    "num_nodes": 15,
+    "num_leaves": 8
+  },
+  "bivariate_summary": {
+    "model_name": "Simplified Bivariate Decision Tree (custom)",
+    "train_accuracy": 0.9904761904761905,
+    "test_accuracy": 0.9555555555555556,
+    "precision": 0.9555555555555556,
+    "recall": 0.9555555555555556,
+    "f1": 0.9555555555555556,
+    "training_time_seconds": 0.5684430599212646,
+    "depth": 3,
+    "num_nodes": 7,
+    "num_leaves": 4
+  },
+  "bivariate_node_report": {
+    "num_bivariate_nodes": 1,
+    "num_univariate_nodes": 2,
+    "bivariate_node_details": [
+      {
+        "feature_pair": [
+          "sepal length (cm)",
+          "petal width (cm)"
+        ],
+        "w1": 0.17364817766693041,
+        "w2": 0.984807753012208,
+        "b": -2.811568743839148,
+        "impurity_gain": 0.44594594594594594,
+        "n_samples": 70
+      }
+    ]
+  },
+  "confusion_matrix_baseline": [
+    [
+      15,
+      0,
+      0
+    ],
+    [
+      0,
+      12,
+      3
+    ],
+    [
+      0,
+      0,
+      15
+    ]
+  ],
+  "confusion_matrix_bivariate": [
+    [
+      15,
+      0,
+      0
+    ],
+    [
+      0,
+      14,
+      1
+    ],
+    [
+      0,
+      1,
+      14
+    ]
+  ],
+  "config": {
+    "random_seed": 42,
+    "test_size": 0.3,
+    "bivariate_max_depth": 4,
+    "bivariate_min_samples_split": 5,
+    "bivariate_n_orientations": 18,
+    "bivariate_min_impurity_decrease": 1e-07
+  }
+}
