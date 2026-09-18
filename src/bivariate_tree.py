@@ -59,9 +59,7 @@ WHAT WE SIMPLIFY / LEAVE OUT (see Step 3 of the plan) -- OUT OF SCOPE
   Iris only has 4 features -> 6 pairs total) rather than a general
   large-D scheme.
 
-These choices are simplifications/engineering decisions for a
-one-week student project, not claims about what the original paper
-does at full scale.
+
 """
 
 import itertools
